@@ -9,6 +9,6 @@ render(
   <BrowserRouter>
     <App />
   </BrowserRouter>
-  , document.body
+  , document.getElementById('root')
 );
 registerServiceWorker();
