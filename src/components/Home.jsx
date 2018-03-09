@@ -9,7 +9,16 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        Home
+      <div
+      className="header"
+      />
+      <div className="navbar" />
+      <div className="row">
+        <div className="side" />
+        <div className="main"/>
+        </div>
+      <div
+      className="footer"/>
       </div>
     );
   }

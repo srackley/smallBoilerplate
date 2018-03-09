@@ -1,7 +1,24 @@
+$neutral-color-light: white;
+$neutral-color-medium: gray;
+$neutral-color-dark: black;
+$primary-color-light: lightpink;
+$primary-color-medium: red;
+$primary-color-dark: purple;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 @import '_app';
+@import '_layout';

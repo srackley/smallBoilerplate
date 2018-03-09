@@ -10,7 +10,7 @@ const app = express();
 module.exports = app
 .use(bodyParser.urlencoded({ extended: true }))
 .use(bodyParser.json())
-.use(morgan('dev'))
+.use(morgan('tiny'))
 .use(express.static(resolve(__dirname, '..', 'public')))
 .use('/api', require('./api'))
 .use((req, res, next) =>

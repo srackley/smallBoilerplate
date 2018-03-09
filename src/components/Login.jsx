@@ -70,7 +70,7 @@ class Login extends React.Component {
       <div>
         <h1>Login</h1>
         <form
-          className="loginForm"
+          className="loginForm container flow-col"
           onChange={e => this.handleChange(e)}
           onSubmit={e => this.handleSubmit(e)}>
           <label htmlFor="email">Email</label>
@@ -79,6 +79,7 @@ class Login extends React.Component {
             name="email"
             id="email" placeholder="JohnDoe@gmail.com"
             value={this.state.email} />
+            <br/>
           <label htmlFor="password">Password</label>
           <input
             type="text"

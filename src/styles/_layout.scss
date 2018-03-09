@@ -1,0 +1,80 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: $primary-color-medium;
+    color: $primary-color-dark;
+}
+
+.navbar {
+    display: flex;
+    background-color: $primary-color-dark;
+    padding:10px;
+}
+
+.navbar a {
+    color: $neutral-color-light;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: $neutral-color-medium;
+    color: $neutral-color-dark;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.side {
+    flex: 30%;
+    background-color: $neutral-color-medium;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.main {
+    flex: 70%;
+    background-color: $neutral-color-light;
+    padding: 20px;
+    min-height: 300px;
+}
+
+
+.img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: $neutral-color-medium;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
+
+.center {
+    justify-content: center;
+    align-content: center;
+}
+
+.even {
+    justify-content: space-evenly;
+}
+
+.flow-row {
+    flex-flow: row nowrap;
+}
+
+.flow-col {
+    flex-flow: column wrap;
+}
